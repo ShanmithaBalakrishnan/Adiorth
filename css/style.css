@@ -3641,6 +3641,7 @@ ul {
   flex-direction: column;
 }
 .banner-section .outer-box .bg::before {
+  background-image: url(images/background/5.webp);
   position: absolute;
   left: 0;
   top: 0;
@@ -6496,7 +6497,7 @@ video::-webkit-media-controls-panel {
 .news-block .image-box .image img,
 .news-block-four .image-box .image img {
   display: block;
-  width: 100%;
+  width: 480px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

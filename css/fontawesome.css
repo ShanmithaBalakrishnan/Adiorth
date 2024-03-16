@@ -7,7 +7,7 @@
   font-family: var(--fa-style-family, "Font Awesome 6 Pro");
   font-weight: 900;
   font-weight: var(--fa-style, 900);
-  font-display:swap;
+  font-display: swap;
 }
 
 .fa,
@@ -120,7 +120,7 @@
   padding-left: 0;
 }
 
-.fa-ul>li {
+.fa-ul > li {
   position: relative;
 }
 
@@ -176,7 +176,10 @@
   animation-duration: var(--fa-animation-duration, 1s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
@@ -201,12 +204,21 @@
   animation-duration: var(--fa-animation-duration, 1s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
   animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  -webkit-animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.4, 0, 0.6, 1)
+  );
+  animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.4, 0, 0.6, 1)
+  );
 }
 
 .fa-flash {
@@ -226,12 +238,21 @@
   animation-duration: var(--fa-animation-duration, 1s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
   animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);
-  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
-  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+  -webkit-animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.4, 0, 0.6, 1)
+  );
+  animation-timing-function: var(
+    --fa-animation-timing,
+    cubic-bezier(0.4, 0, 0.6, 1)
+  );
 }
 
 .fa-flip {
@@ -251,7 +272,10 @@
   animation-duration: var(--fa-animation-duration, 1s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
@@ -276,7 +300,10 @@
   animation-duration: var(--fa-animation-duration, 2s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -302,7 +329,10 @@
   animation-duration: var(--fa-animation-duration, 1s);
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   -webkit-animation-timing-function: steps(8);
   animation-timing-function: steps(8);
@@ -311,7 +341,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .fa-beat,
   .fa-fade,
   .fa-flash,
@@ -333,7 +362,6 @@
 }
 
 @-webkit-keyframes fa-beat {
-
   0%,
   90% {
     -webkit-transform: scale(1);
@@ -349,7 +377,6 @@
 }
 
 @keyframes fa-beat {
-
   0%,
   90% {
     -webkit-transform: scale(1);
@@ -379,7 +406,6 @@
 }
 
 @-webkit-keyframes fa-flash {
-
   0%,
   100% {
     opacity: 0.4;
@@ -398,7 +424,6 @@
 }
 
 @keyframes fa-flash {
-
   0%,
   100% {
     opacity: 0.4;
@@ -420,8 +445,18 @@
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     transform: rotate3d(0, 1, 0, -180deg);
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
+    transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
   }
 }
 
@@ -429,8 +464,18 @@
   50% {
     -webkit-transform: rotate3d(0, 1, 0, -180deg);
     transform: rotate3d(0, 1, 0, -180deg);
-    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
-    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+    -webkit-transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
+    transform: rotate3d(
+      var(--fa-flip-x, 0),
+      var(--fa-flip-y, 1),
+      var(--fa-flip-z, 0),
+      var(--fa-flip-angle, -180deg)
+    );
   }
 }
 
@@ -14357,16 +14402,18 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: "Font Awesome 6 Brands";
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype");
+  src: url("../fonts/fa-brands-400.woff2") format("woff2"),
+    url("../fonts/fa-brands-400.woff") format("woff"),
+    url("../fonts/fa-brands-400.ttf") format("truetype");
 }
 
 .fab,
 .fa-brands {
-  font-family: 'Font Awesome 6 Brands';
+  font-family: "Font Awesome 6 Brands";
   font-weight: 400;
 }
 
@@ -16219,17 +16266,19 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Duotone';
+  font-family: "Font Awesome 6 Duotone";
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../fonts/fa-duotone-900.woff2") format("woff2"), url("../fonts/fa-duotone-900.woff") format("woff"), url("../fonts/fa-duotone-900.ttf") format("truetype");
+  src: url("../fonts/fa-duotone-900.woff2") format("woff2"),
+    url("../fonts/fa-duotone-900.woff") format("woff"),
+    url("../fonts/fa-duotone-900.ttf") format("truetype");
 }
 
 .fad,
 .fa-duotone {
   position: relative;
-  font-family: 'Font Awesome 6 Duotone';
+  font-family: "Font Awesome 6 Duotone";
   font-weight: 900;
 }
 
@@ -33561,57 +33610,65 @@ readers do not read off random characters that represent icons */
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-style: normal;
   font-weight: 300;
   font-display: block;
-  src: url("../fonts/fa-light-300.woff2") format("woff2"), url("../fonts/fa-light-300.woff") format("woff"), url("../fonts/fa-light-300.ttf") format("truetype");
+  src: url("../fonts/fa-light-300.woff2") format("woff2"),
+    url("../fonts/fa-light-300.woff") format("woff"),
+    url("../fonts/fa-light-300.ttf") format("truetype");
 }
 
 .fal,
 .fa-light {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype");
+  src: url("../fonts/fa-regular-400.woff2") format("woff2"),
+    url("../fonts/fa-regular-400.woff") format("woff"),
+    url("../fonts/fa-regular-400.ttf") format("truetype");
 }
 
 .far,
 .fa-regular {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype");
+  src: url("../fonts/fa-solid-900.woff2") format("woff2"),
+    url("../fonts/fa-solid-900.woff") format("woff"),
+    url("../fonts/fa-solid-900.ttf") format("truetype");
 }
 
 .fas,
 .fa-solid {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-weight: 900;
 }
 
 @font-face {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-style: normal;
   font-weight: 100;
   font-display: block;
-  src: url("../fonts/fa-thin-100.woff2") format("woff2"), url("../fonts/fa-thin-100.woff") format("woff"), url("../fonts/fa-thin-100.ttf") format("truetype");
+  src: url("../fonts/fa-thin-100.woff2") format("woff2"),
+    url("../fonts/fa-thin-100.woff") format("woff"),
+    url("../fonts/fa-thin-100.ttf") format("truetype");
 }
 
 .fat,
 .fa-thin {
-  font-family: 'Font Awesome 6 Pro';
+  font-family: "Font Awesome 6 Pro";
   font-weight: 100;
 }
