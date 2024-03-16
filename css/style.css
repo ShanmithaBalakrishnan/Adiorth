@@ -4458,6 +4458,7 @@ Section Title
   }
 }
 .banner-section .main-bg {
+  background-image: url(images/background/5.jpg);
   position: absolute;
   left: 0;
   top: 0;
@@ -4496,6 +4497,9 @@ Section Title
   .banner-section .outer-box {
     min-height: 700px;
   }
+}
+.banner-section .outer-box .bg {
+  background-image: url(images/background/5.jpg);
 }
 .banner-section .outer-box .bg::before {
   position: absolute;
