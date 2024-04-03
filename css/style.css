@@ -14,7 +14,7 @@
 body,
 p {
   font-size: var(--body-font-size);
-  font-family: "Prata";
+  font-family: "Prata" !important;
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
   color: var(--text-color);
@@ -24,7 +24,7 @@ a,
 body,
 p {
   color: var(--text-color);
-  font-family: "Prata";
+  font-family: "Prata"!important;
 }
 
 .dark-layout .preloader,
@@ -3796,7 +3796,7 @@ ul {
   .banner-section .content-box .title {
     font-size: 80px !important;
     left: -10px;
-    font-family: 'Prata' !important;
+    font-family: "Prata" !important;
   }
   .banner-section .image-box {
     left: 220px;
@@ -3847,6 +3847,7 @@ video::-webkit-media-controls-panel {
     background: var(--gradient-3);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    font-family: "Prata" !important;
   }
   .banner-section .content-box {
     background: var(--gradient-3);
