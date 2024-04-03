@@ -184,7 +184,6 @@ h5,
 h6 {
   font-family: prata !important;
   color: var(--headings-color);
-  font-family: var(--title-font);
   position: relative;
   line-height: var(--line-height-heading-);
   margin-bottom: 1rem;
@@ -3796,6 +3795,7 @@ ul {
   .banner-section .content-box .title {
     font-size: 80px !important;
     left: -10px;
+    font-family: 'Prata' !important;
   }
   .banner-section .image-box {
     left: 220px;
