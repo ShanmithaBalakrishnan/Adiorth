@@ -8,8 +8,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mediaqueries.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/Logo.webp" type="image/x-icon">
-    <link rel="icon" href="images/Logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.webp" onerror="hideImg()" type="image/x-icon" title="favicon">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
@@ -22,6 +23,10 @@
 
         label.error {
             display: inline !important;
+        }
+        
+        .swal-button{
+            background-color: var(--theme-color2) !important;
         }
     </style>
 </head>
@@ -44,7 +49,7 @@
                             </script>
                             <script type="text/javascript"
                                 src="../../../ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-                            <img src="images/Logo.webp" alt>
+                            <img src="images/logo.png" alt>
                         </div>
                     </div>
 
@@ -78,7 +83,7 @@
 
                 <nav class="menu-box">
                     <div class="upper-box">
-                        <div class="nav-logo"><img src="images/Logo.webp" alt title></div>
+                        <div class="nav-logo"><img src="images/logo.png" alt title></div>
                         <div class="close-btn"><i class="icon fa fa-times"></i></div>
                     </div>
                     <ul class="contact-list-one">
@@ -109,7 +114,7 @@
         <section class="hidden-bar">
             <div class="inner-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="index.html"><img src="images/logo.webp" alt title></a></div>
+                    <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt title></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
                 <div class="text-box">
@@ -175,7 +180,7 @@
                             <div class="team-details__top-right">
                                 <div class="team-details__top-content">
                                     <h3 class="team-details__top-name">Dr Abishek Prasenaa</h3>
-                                    <p class="team-details__top-title">Founder of Adiorth</p>
+                                    <p class="team-details__top-title">MEDICAL HEAD</p>
                                     <p class="team-details__top-text-1" style="font-size: 15px; line-height: 15px;">Meet
                                         Dr. Abishek Prasenaa, also known as Abishek, is the co-founder of AdiOrth
                                         alongside Priya.
@@ -278,19 +283,19 @@
                     <div class="footer-upper">
                     </div>
                     <div class="row">
-                        <div class="footer-column col-lg-3 col-md-6">
-                            <div class="footer-widget address-widget">
-                                <h6 class="widget-title">Reach Us Through</h6>
-                                <ul class="user-links">
-                                    <li><span class="txt"></span>For technical queries:</span> <a
-                                            href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
-                                    </li>
-                                    <li><span class="txt"></span>For partnership and investment-related questions</span>
-                                        <a href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+						<div class="footer-column col-lg-3 col-md-6">
+							<div class="footer-widget address-widget">
+								<h6 class="widget-title">Reach Us Through</h6>
+								<ul class="user-links">
+									<li><span class="txt"></span>For technical queries:</span> <a
+											href="mailto:tech@adiorth.in">tech@adiorth.in</a>
+									</li>
+									<li><span class="txt"></span>For partnership and investment-related questions</span>
+										<a href="mailto:Collab@adiorth.in">Collab@adiorth.in</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 
                         <div class="footer-column col-lg-3 col-md-6">
                             <div class="footer-widget">
@@ -355,9 +360,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script>
         $(document).ready(function() {
+            const currentUrl = new URLSearchParams(window.location.search);
+            const mail = currentUrl.get('mail');
+            if(mail=='success')
+            {
+                swal("Mail sent successfully!", "", "success");   
+            }
+            
             $('#contact_submit').click(function(){
                 $("#contactForm").validate({
                     rules: {

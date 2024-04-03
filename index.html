@@ -16,10 +16,15 @@
     <meta property="og:image" content="%PUBLIC_URL%/images/OG_Image">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="images/Logo.webp" onerror="hideImg()" type="image/x-icon" title="Logo">
+    <link rel="shortcut icon" href="images/logo.png" onerror="hideImg()" type="image/x-icon" title="Logo">
     <link rel="icon" href="images/favicon.webp" onerror="hideImg()" type="image/x-icon" title="favicon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <style>
+        .swal-button {
+            background-color: var(--theme-color2) !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +41,7 @@
                             </script>
                             <script type="text/javascript"
                                 src="../../../ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-                            <img src="images/Logo.webp" alt="Logo" style="height:50px; width:50px;">
+                            <img src="images/logo.png" alt="Logo" style="height:40px; width:40px;">
                         </div>
                     </div>
                     <div class="nav-outer">
@@ -63,7 +68,7 @@
             <div class="mobile-menu">
                 <nav class="menu-box">
                     <div class="upper-box">
-                        <div class="nav-logo"><img src="images/Logo.webp" alt="Logo" title></div>
+                        <div class="nav-logo"><img src="/images/logo.png" alt="Logo" title></div>
                         <div class="close-btn"><i class="icon fa fa-times"></i></div>
                     </div>
                     <ul class="navigation clearfix">
@@ -90,7 +95,7 @@
         <section class="hidden-bar">
             <div class="inner-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="index.html"><img src="images/logo.webp" alt="Logo" title></a></div>
+                    <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="Logo" title></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
                 <div class="text-box">
@@ -142,7 +147,8 @@
 
         <!--SERVICES SECTION STARTS-->
         <section class="project-section" id="project-section">
-            <div class="bg bg-parallax" style="background-image: url(images/background/2.webp)" onerror="hideImg()"></div>
+            <div class="bg bg-parallax" style="background-image: url(images/background/2.webp)" onerror="hideImg()">
+            </div>
             <div class="large-container">
                 <div class="sec-title">
                     <div class="row">
@@ -160,12 +166,10 @@
                             <div class="project-block">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="images/background/7.webp" onerror="hideImg()" class="lightbox-image"
-                                                alt="service-1"><img src="images/background/7.webp" onerror="hideImg()" alt="service-1"></a>
+                                        <figure class="image"><a href="services.html" class="lightbox-image"
+                                                alt="service-1"><img src="images/service1.webp" onerror="hideImg()"
+                                                    alt="service-1"></a>
                                         </figure>
-                                        <div class="overlay-content">
-                                            <h5 class="title">Additive Manufacturing</h5>
-                                        </div>
                                     </div>
                                     <div class="content-box">
                                         <a href="services.html" class="read-more">Read More</a>
@@ -175,12 +179,10 @@
                             <div class="project-block">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="images/background/8.webp" onerror="hideImg()" class="lightbox-image"
-                                                alt="service-2"><img src="images/background/8.webp" onerror="hideImg()" alt="service-2"></a>
+                                        <figure class="image"><a href="services.html" class="lightbox-image"
+                                                alt="service-2"><img src="images/service2.webp" onerror="hideImg()"
+                                                    alt="service-2"></a>
                                         </figure>
-                                        <div class="overlay-content">
-                                            <h5 class="title">Solutions</h5>
-                                        </div>
                                     </div>
                                     <div class="content-box">
                                         <a href="services.html" class="read-more">Read More</a>
@@ -190,12 +192,10 @@
                             <div class="project-block">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="images/background/6.webp" onerror="hideImg()" class="lightbox-image"
-                                                alt="service-3"><img src="images/background/6.webp" onerror="hideImg()" alt="service-3"></a>
+                                        <figure class="image"><a href="services.html" class="lightbox-image"
+                                                alt="service-3"><img src="images/service3.webp" onerror="hideImg()"
+                                                    alt="service-3"></a>
                                         </figure>
-                                        <div class="overlay-content">
-                                            <h5 class="title">CSR goals</h5>
-                                        </div>
                                     </div>
                                     <div class="content-box">
                                         <a href="services.html" class="read-more">Read More</a>
@@ -218,8 +218,8 @@
                         <div class="inner-column">
                             <div class="sec-title-two title-anim-two">
                                 <span class="sub-title">Who We Are</span>
-                                <h3 class="words-rotate-in text-split">AdiOrth - Your Premier Destination for Orthopedic
-                                    Solutions in India!
+                                <h3 class="words-rotate-in text-split">AdiOrth - Building Orthopedic
+                                    Implants Layer-by-Layer!
                                 </h3>
                                 <div class="text"> AdiOrth: We are on a mission to improve thr quality-adjusted life
                                     years of aging population in India by producing novel orthopedic solutions.
@@ -307,8 +307,8 @@
                             <div class="team-block-three">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="Aadhithya.html"><img src="images/Aadhithya.webp" onerror="hideImg()"
-                                                    alt="ImageAadhithya"></a>
+                                        <figure class="image"><a href="Aadhithya.html"><img src="images/Aadhithya.webp"
+                                                    onerror="hideImg()" alt="ImageAadhithya"></a>
                                         </figure>
                                     </div>
                                     <div class="info-box">
@@ -322,8 +322,8 @@
                             <div class="team-block-three">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="Abishek.html"><img src="images/Abishek.webp" onerror="hideImg()"
-                                                    alt="ImageAbishek"></a>
+                                        <figure class="image"><a href="Abishek.html"><img src="images/Abishek.webp"
+                                                    onerror="hideImg()" alt="ImageAbishek"></a>
                                         </figure>
                                     </div>
                                     <div class="info-box">
@@ -367,8 +367,10 @@
                                 </div>
                             </div>
                             <div class="content-box">
-                                <h3 class="title"><a href="blogs.html"><p hidden>click here</p>AdiOrth - Must Know Story of Two Curious
-                                        Enterpreneurs</a>
+                                <h3 class="title"><a href="blogs.html">
+                                        <p hidden>click here</p>AdiOrth - Must Know Story of Two Curious
+                                        Enterpreneurs
+                                    </a>
                                 </h3>
                                 <a href="blogs.html" class="read-more">Learn More</a>
                             </div>
@@ -392,13 +394,13 @@
                             <li>
                                 <i class="icon far fa-envelope-open-text"></i>
                                 <span class="title">For technical queries</span>
-                                <div class="text"><a href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
+                                <div class="text"><a href="mailto:tech@adiorth.in">tech@adiorth.in</a>
                                 </div>
                             </li>
                             <li>
                                 <i class="icon far fa-envelope-open-text"></i>
                                 <span class="title">For partnership and investment related questions</span>
-                                <div class="text"><a href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
+                                <div class="text"><a href="mailto:Collab@adiorth.in">Collab@adiorth.in</a>
                                 </div>
                             </li>
                             <li>
@@ -476,10 +478,10 @@
                                 <h6 class="widget-title">Reach Us Through</h6>
                                 <ul class="user-links">
                                     <li><span class="txt"></span>For technical queries:</span> <a
-                                            href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
+                                            href="mailto:tech@adiorth.in">tech@adiorth.in</a>
                                     </li>
                                     <li><span class="txt"></span>For partnership and investment-related questions</span>
-                                        <a href="mailto:priyaashok@adiorth.in">priyaashok@adiorth.in</a>
+                                        <a href="mailto:Collab@adiorth.in">Collab@adiorth.in</a>
                                     </li>
                                 </ul>
                             </div>
@@ -544,9 +546,15 @@
     <script src="js/optimize-images.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script>
         $(document).ready(function () {
+            const currentUrl = new URLSearchParams(window.location.search);
+            const mail = currentUrl.get('mail');
+            if (mail == 'success') {
+                swal("Mail sent successfully!", "", "success");
+            }
+
             $('#contact_submit').click(function () {
                 $("#contactForm").validate({
                     rules: {
