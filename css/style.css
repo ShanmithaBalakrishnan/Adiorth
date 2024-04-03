@@ -106,7 +106,7 @@ a:hover {
   --gradient-3: linear-gradient(#be6673, #ffe666);
   --text-font: "Prata", sans-serif;
   --title-font: "Prata", sans-serif;
-  --title-font-two: "Oswald", sans-serif;
+  --title-font-two: "Prata", sans-serif;
   --body-font-size: 16px;
   --body-line-height: 28px;
   --body-font-weight: 400;
@@ -184,6 +184,7 @@ h5,
 h6 {
   font-family: prata !important;
   color: var(--headings-color);
+  font-family: var(--title-font);
   position: relative;
   line-height: var(--line-height-heading-);
   margin-bottom: 1rem;
